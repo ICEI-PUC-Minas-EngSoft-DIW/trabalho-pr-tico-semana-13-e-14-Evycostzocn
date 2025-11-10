@@ -1,18 +1,50 @@
 {
-  "usuarios": [
+  "jogos": [
     {
-      "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
-      "login": "admin",
-      "senha": "123",
-      "nome": "Administrador do Sistema",
-      "email": "admin@abc.com"
+      "id": "1",
+      "nome": "God of War",
+      "genero": "Ação",
+      "ano": 2018,
+      "descricao": "Acompanhe Kratos em uma jornada épica pela mitologia nórdica.",
+      "avaliacao": 9.6,
+      "imagem": "img/godofwar.jpg",
+      "destaque": true
     },
     {
-      "id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
-      "login": "user",
-      "senha": "123",
-      "nome": "Usuario Comum",
-      "email": "user@abc.com"
+      "id": "2",
+      "nome": "Cyberpunk 2077",
+      "genero": "RPG",
+      "ano": 2020,
+      "descricao": "Vivencie uma aventura futurista em uma cidade caótica cheia de tecnologia.",
+      "avaliacao": 8.5,
+      "imagem": "img/cyberpunk2077.jpeg",
+      "destaque": true
+    },
+    {
+      "id": "3",
+      "nome": "Red Dead Redemption 2",
+      "genero": "Ação/Aventura",
+      "ano": 2018,
+      "descricao": "Explore o Velho Oeste e viva uma narrativa épica cheia de detalhes e ação.",
+      "avaliacao": 10,
+      "imagem": "img/rdr2.jpeg",
+      "destaque": true
+    },
+    {
+      "id": "4",
+      "nome": "Uncharted 4",
+      "genero": "Ação",
+      "ano": 2016,
+      "descricao": "Dois irmãos saem em busca de um tesouro desconhecido.",
+      "avaliacao": 9.4
+    },
+    {
+      "id": "5",
+      "nome": "Days Gone",
+      "genero": "Ação",
+      "ano": 2019,
+      "descricao": "Dois anos após uma pandemia devastadora, jogue com Deacon, um andarilho caçador de recompensas que luta para sobreviver e ao mesmo tempo procura uma razão para viver.",
+      "avaliacao": 9
     }
   ]
 }
