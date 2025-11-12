@@ -23,7 +23,7 @@
     {
       "id": "3",
       "nome": "Red Dead Redemption 2",
-      "genero": "Ação/Aventura",
+      "genero": "Ação",
       "ano": 2018,
       "descricao": "Explore o Velho Oeste e viva uma narrativa épica cheia de detalhes e ação.",
       "avaliacao": 10,
@@ -45,6 +45,30 @@
       "ano": 2019,
       "descricao": "Dois anos após uma pandemia devastadora, jogue com Deacon, um andarilho caçador de recompensas que luta para sobreviver e ao mesmo tempo procura uma razão para viver.",
       "avaliacao": 9
+    },
+    {
+      "id": "6",
+      "nome": "Outlast 2",
+      "genero": "Terror",
+      "ano": 2017,
+      "descricao": "Blake Langermann, um jornalista investigativo e cinegrafista, e sua esposa Lynn Langermann, que trabalham juntos, sofrem um acidente de helicóptero na região de Supai, localizada no Planalto do Colorado, Arizona, enquanto investigavam o misterioso assassinato de uma jovem grávida conhecida apenas como Jane Doe.",
+      "avaliacao": 9
+    },
+    {
+      "id": "7",
+      "nome": "Resident Evil Village",
+      "genero": "Terror",
+      "ano": 2021,
+      "descricao": "Ambientado anos após os eventos terríveis do aclamado Resident Evil 7: Biohazard, a nova história começa com Ethan Winters e sua esposa, Mia, vivendo tranquilamente em um novo lugar, livres dos pesadelos do passado. Mas quando estavam começando a construir uma nova vida, ocorre novamente uma tragédia.",
+      "avaliacao": 9
+    },
+    {
+      "id": "8",
+      "nome": "Outlast ",
+      "genero": "Terror",
+      "ano": 2013,
+      "descricao": "O enredo do jogo é centrado em Miles Upshur, um repórter investigativo que decide investigar um hospital psiquiátrico abandonado chamado Mount Massive Asylum, localizado nas profundezas das montanhas de Lake County, Colorado.",
+      "avaliacao": 10
     }
   ]
 }

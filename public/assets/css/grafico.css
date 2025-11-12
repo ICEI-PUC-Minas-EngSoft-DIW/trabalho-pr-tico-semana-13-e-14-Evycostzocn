@@ -1,0 +1,72 @@
+/* ===== RESET BÁSICO ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  background-color: #001428;
+  color: #e9f1f7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ===== HEADER ===== */
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 50px;
+  background-color: #002242;
+  color: #fff;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+}
+
+header .logo {
+  display: flex;
+  align-items: center;
+}
+
+header .logo img {
+  width: 110px;
+  height: auto;
+}
+
+header .logo {
+  font-size: 1.6rem;
+  margin-left: 10px;
+  color: #9ccae3;
+}
+
+header nav a {
+  color: #6fadd2;
+  text-decoration: none;
+  margin-left: 24px;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+header nav a:hover,
+header nav a.active {
+  color: #9ccae3;
+  text-decoration: underline;
+}
+
+/* GRAFICO */
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin-top: 30px;
+}
+
+canvas {
+    background-color: #0b1c2e;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
