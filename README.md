@@ -18,6 +18,14 @@ Sugerimos o uso das seguintes ferramentas acessíveis: [FullCalendar](https://fu
 
 << Coloque aqui uma breve explicação da implementação feita nessa etapa>>
 
+Nessa etapa, implementei um gráfico que registra a quantidade de jogos por gênero e também um mapa que mostra o país em que cada jogo foi lançado!
+
 <<  COLOQUE A IMAGEM TELA 1 AQUI >>
 
+![Gráfico antes de salvar novo jogo](public/img/graficoantes.png)
+![Gráfico depois de salvar novo jogo](public/img/graficodepois.png)
+
 <<  COLOQUE A IMAGEM TELA 2 AQUI >>
+
+![Mapa antes de salvar novo jogo](public/img/mapaantes.png)
+![Mapa depois de salvar novo jogo](public/img/mapadepois.png)

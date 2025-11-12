@@ -38,6 +38,7 @@ function listarJogos() {
                     <p><strong>Gênero:</strong> ${jogo.genero}</p>
                     <p><strong>Ano:</strong> ${jogo.ano}</p>
                     <p><strong>Avaliação:</strong> ${jogo.avaliacao}</p>
+                    <p><strong>País em que foi produzido:</strong> ${jogo.pais}</p>
                     <p>${jogo.descricao}</p>
                     <div class="btn-actions">
                         <button onclick="editarJogo(${jogo.id})">Editar</button>
@@ -123,6 +124,7 @@ function editarJogo(id) {
              document.getElementById("ano").value = jogo.ano;
              document.getElementById("descricao").value = jogo.descricao;
              document.getElementById("avaliacao").value = jogo.avaliacao;
+             document.getElementById("pais").value = jogo.pais;
 
             // 2. Define o estado de edição
             idParaEditar = id; 
@@ -163,7 +165,8 @@ function submitFormularioUnificado(e) {
         // Garante que o ano e avaliação sejam números
         ano: Number(document.getElementById("ano").value),
         descricao: document.getElementById("descricao").value,
-        avaliacao: Number(document.getElementById("avaliacao").value) || 0
+        avaliacao: Number(document.getElementById("avaliacao").value) || 0,
+        pais: document.getElementById("pais").value
     };
 
     // 2. Decide se é POST ou PUT

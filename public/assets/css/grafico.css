@@ -59,14 +59,44 @@ header nav a.active {
 
 /* GRAFICO */
 .container {
-    width: 80%;
-    max-width: 600px;
-    margin-top: 30px;
+  width: 80%;
+  max-width: 600px;
+  margin-top: 30px;
 }
 
 canvas {
-    background-color: #0b1c2e;
-    border-radius: 12px;
-    padding: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  background-color: #0b1c2e;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+/* MAPA */
+.mapa-container {
+  width: 80%;
+  max-width: 900px;
+  margin: 50px 0;
+  text-align: center;
+}
+
+.mapa-container h2 {
+  color: #9ccae3;
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+#map {
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.mapboxgl-popup-content {
+  background-color: #0f172a;
+  color: black;
+  border-radius: 10px;
+  font-family: 'Segoe ui', sans-serif;
+  font-size: 14PX;
+}
+
+.mapboxgl-popup-tip {
+  border-top-color: #0f172a !important; 
 }

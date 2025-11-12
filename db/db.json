@@ -7,6 +7,7 @@
       "ano": 2018,
       "descricao": "Acompanhe Kratos em uma jornada épica pela mitologia nórdica.",
       "avaliacao": 9.6,
+      "pais": "Estados Unidos",
       "imagem": "img/godofwar.jpg",
       "destaque": true
     },
@@ -17,6 +18,7 @@
       "ano": 2020,
       "descricao": "Vivencie uma aventura futurista em uma cidade caótica cheia de tecnologia.",
       "avaliacao": 8.5,
+      "pais": "Polônia",
       "imagem": "img/cyberpunk2077.jpeg",
       "destaque": true
     },
@@ -27,6 +29,7 @@
       "ano": 2018,
       "descricao": "Explore o Velho Oeste e viva uma narrativa épica cheia de detalhes e ação.",
       "avaliacao": 10,
+      "pais": "Estados Unidos",
       "imagem": "img/rdr2.jpeg",
       "destaque": true
     },
@@ -36,7 +39,8 @@
       "genero": "Ação",
       "ano": 2016,
       "descricao": "Dois irmãos saem em busca de um tesouro desconhecido.",
-      "avaliacao": 9.4
+      "avaliacao": 9.4,
+      "pais": "Estados Unidos"
     },
     {
       "id": "5",
@@ -44,7 +48,8 @@
       "genero": "Ação",
       "ano": 2019,
       "descricao": "Dois anos após uma pandemia devastadora, jogue com Deacon, um andarilho caçador de recompensas que luta para sobreviver e ao mesmo tempo procura uma razão para viver.",
-      "avaliacao": 9
+      "avaliacao": 9,
+      "pais": "Estados Unidos"
     },
     {
       "id": "6",
@@ -52,7 +57,8 @@
       "genero": "Terror",
       "ano": 2017,
       "descricao": "Blake Langermann, um jornalista investigativo e cinegrafista, e sua esposa Lynn Langermann, que trabalham juntos, sofrem um acidente de helicóptero na região de Supai, localizada no Planalto do Colorado, Arizona, enquanto investigavam o misterioso assassinato de uma jovem grávida conhecida apenas como Jane Doe.",
-      "avaliacao": 9
+      "avaliacao": 9,
+      "pais": "Canada"
     },
     {
       "id": "7",
@@ -60,7 +66,8 @@
       "genero": "Terror",
       "ano": 2021,
       "descricao": "Ambientado anos após os eventos terríveis do aclamado Resident Evil 7: Biohazard, a nova história começa com Ethan Winters e sua esposa, Mia, vivendo tranquilamente em um novo lugar, livres dos pesadelos do passado. Mas quando estavam começando a construir uma nova vida, ocorre novamente uma tragédia.",
-      "avaliacao": 9
+      "avaliacao": 9,
+      "pais": "Japão"
     },
     {
       "id": "8",
@@ -68,7 +75,17 @@
       "genero": "Terror",
       "ano": 2013,
       "descricao": "O enredo do jogo é centrado em Miles Upshur, um repórter investigativo que decide investigar um hospital psiquiátrico abandonado chamado Mount Massive Asylum, localizado nas profundezas das montanhas de Lake County, Colorado.",
-      "avaliacao": 10
+      "avaliacao": 10,
+      "pais": "Canada"
+    },
+    {
+      "id": "9",
+      "nome": "Life is Strange",
+      "genero": "Aventura",
+      "ano": 2015,
+      "descricao": "A história de Life is Strange gira em torno de adolescentes com poderes sobrenaturais.",
+      "avaliacao": 10,
+      "pais": "França"
     }
   ]
 }
