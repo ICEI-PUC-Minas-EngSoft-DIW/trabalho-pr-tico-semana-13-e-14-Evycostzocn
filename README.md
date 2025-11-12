@@ -9,15 +9,15 @@ Sugerimos o uso das seguintes ferramentas acessíveis: [FullCalendar](https://fu
 
 ## Informações do trabalho
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
+- Nome: Evelyn de Paula Costa
+- Matricula: 904838
+- Proposta de projeto escolhida: InfinityHUB é focada em recomendações de jogos, filmes, séries e livros. Nessas últimas etapas destinei o foco do projeto para jogos!
 - Breve descrição sobre seu projeto:
 
 **Print da tela com a implementação**
+![Gráfico e Mapa](public/img/printmapaegrafico.png)
 
 << Coloque aqui uma breve explicação da implementação feita nessa etapa>>
-
 Nessa etapa, implementei um gráfico que registra a quantidade de jogos por gênero e também um mapa que mostra o país em que cada jogo foi lançado!
 
 <<  COLOQUE A IMAGEM TELA 1 AQUI >>
