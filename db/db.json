@@ -1,4 +1,31 @@
 {
+  "usuarios": [
+    {
+      "id": "1",
+      "nome": "Usuário Teste",
+      "login": "teste",
+      "senha": "123456",
+      "favoritos": [
+        5,
+        4,
+        1
+      ]
+    },
+    {
+      "id": "2",
+      "nome": "Evelyn Costa",
+      "login": "Evycostzocn",
+      "senha": "evelyngata01",
+      "favoritos": [
+        1,
+        2,
+        5,
+        6,
+        4,
+        11
+      ]
+    }
+  ],
   "jogos": [
     {
       "id": "1",

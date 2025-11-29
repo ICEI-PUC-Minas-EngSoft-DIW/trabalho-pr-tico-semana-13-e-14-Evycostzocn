@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Detalhes</title>
 </head>
 <body>
@@ -13,11 +14,21 @@
             <h1>Infinity HUB</h1>
         </div>
         <nav>
-            <a href="index.html">Home</a>
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle" class="menu-icon">
+                <i class="fa fa-bars"></i>
+                <i class="fa fa-times-circle"></i>
+            </label>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jogos.html">Jogos</a></li>
+                <li><a href="grafico.html">Gráfico</a></li>
+                <li><a href="detalhes.html" class="active">Detalhes</a></li>
+            </ul>
         </nav>
     </header>
 
-    <main>
+    <main class="container">
         <section class="detalhes-item">
             <!-- Detalhes serão carregados aqui pelo JavaScript -->
         </section>
@@ -27,7 +38,8 @@
         <p>&copy; 2025 Infinity HUB. Todos os direitos reservados.</p>
     </footer>
     
-    <script src="assets/scripts/db.js"></script>
+    <script src="assets/scripts/auth.js"></script>
+    <script src="assets/scripts/app.js"></script>
 </body>
 </html>
 

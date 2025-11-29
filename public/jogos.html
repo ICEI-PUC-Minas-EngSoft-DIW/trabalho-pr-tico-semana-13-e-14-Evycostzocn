@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogos - Infinity HUB</title>
     <link rel="stylesheet" href="assets/css/jogos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
     <header>
@@ -13,8 +14,17 @@
             <h1>Infinity HUB</h1>
         </div>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="jogos.html" class="active">Jogos</a>
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle" class="menu-icon">
+                <i class="fa fa-bars"></i>
+                <i class="fa fa-times-circle"></i>
+            </label>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jogos.html" class="active">Jogos</a></li>
+                <li><a href="grafico.html">Gráfico</a></li>
+                <li><a href="detalhes.html">Detalhes</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -72,6 +82,7 @@
         <p>&copy; 2025 Infinity HUB. Todos os direitos reservados.</p>
     </footer>
 
+    <script src="assets/scripts/auth.js"></script>
     <script src="assets/scripts/db.js"></script>
 </body>
 </html>

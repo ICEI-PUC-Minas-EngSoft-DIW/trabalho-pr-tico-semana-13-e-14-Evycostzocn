@@ -1,31 +1,53 @@
-
-# Trabalho Prático 07 - Semanas 13 e 14
-
-A partir dos dados cadastrados na etapa anterior, vamos trabalhar formas de apresentação que representem de forma clara e interativa as informações do seu projeto. Você poderá usar gráficos (barra, linha, pizza), mapas, calendários ou outras formas de visualização. Seu desafio é entregar uma página Web que organize, processe e exiba os dados de forma compreensível e esteticamente agradável.
-
-Com base nos tipos de projetos escohidos, você deve propor **visualizações que estimulem a interpretação, agrupamento e exibição criativa dos dados**, trabalhando tanto a lógica quanto o design da aplicação.
-
-Sugerimos o uso das seguintes ferramentas acessíveis: [FullCalendar](https://fullcalendar.io/), [Chart.js](https://www.chartjs.org/), [Mapbox](https://docs.mapbox.com/api/), para citar algumas.
-
 ## Informações do trabalho
 
-- Nome: Evelyn de Paula Costa
-- Matricula: 904838
-- Proposta de projeto escolhida: InfinityHUB é focada em recomendações de jogos, filmes, séries e livros. Nessas últimas etapas destinei o foco do projeto para jogos!
-- Breve descrição sobre seu projeto:
+- Nome: Evelyn Costa
+- Proposta de projeto escolhida: InfinityHUB, sistema que lista jogos de acordo com a categoria de gênero.
+- Breve descrição sobre seu projeto: InfinityHUB é focado em recomendações de jogos.
 
-**Print da tela com a implementação**
-![Gráfico e Mapa](public/img/printmapaegrafico.png)
+## ✅ Pré-requisitos
 
-<< Coloque aqui uma breve explicação da implementação feita nessa etapa>>
-Nessa etapa, implementei um gráfico que registra a quantidade de jogos por gênero e também um mapa que mostra o país em que cada jogo foi lançado!
+Antes de iniciar, certifique-se de:
 
-<<  COLOQUE A IMAGEM TELA 1 AQUI >>
+1. Ter o [Node.js](https://nodejs.org/) instalado em sua máquina.  
+2. Estar no terminal na pasta raiz do projeto.  
+   ```bash
+   node -v
+   Se aparecer algo como v22.9.0, o Node está pronto para uso⚙️
 
-![Gráfico antes de salvar novo jogo](public/img/graficoantes.png)
-![Gráfico depois de salvar novo jogo](public/img/graficodepois.png)
+Passo a passo para executar o projeto:
 
-<<  COLOQUE A IMAGEM TELA 2 AQUI >>
+1. Abra o projeto no terminal
+    Acesse a pasta onde o projeto está salvo e acesse a pasta db.
+    Exemplo:
+    cd: caminho/da/sua/pasta/db
+    ![Foto de exemplo do caminho da pasta](public/img/exemplocd.png)
 
-![Mapa antes de salvar novo jogo](public/img/mapaantes.png)
-![Mapa depois de salvar novo jogo](public/img/mapadepois.png)
+2. Abra o arquivo principal no navegador
+    Abra o arquivo html que você está avaliando no seu navegador(basta dar duplo clique no arquivo ou abrir via VS Code com "Open with Live Server)
+
+    ⚠️ Nesse momento o CRUD ainda não estará funcional, apenas a interface será exibida e pode apresentar erro.
+
+
+3. Execute o servidor JSON
+    No mesmo terminal, execute o seguinte comando:
+
+    npx json-server --watch db.json --port 3001
+
+    Depois de rodar, ele mostrará algo como:    
+        Index:
+        http://localhost:3001/
+    ![Foto de exemplo do terminal](public/img/node3001.png)
+
+4. Volte para a página do arquivo principal e atualize
+    Volte à aba onde abriu o arquivo principal e aperte F5 / Atualizar a página
+    Agora o CRUD está funcional
+    Exemplo:
+    ![Foto de exemplo do CRUD funcionando](public/img/crudjogos.png)
+    
+ 
+
+## 📝 Observações
+
+1. Todas as aplicações que utilizam JSONServer estão na porta 3001.
+
+

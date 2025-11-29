@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favoritos - Infinity HUB</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        .favoritos-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 30px 40px;
+        }
+        .favoritos-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .favoritos-header h2 {
+            color: #9ccae3;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #4e8bb8;
+            padding-bottom: 15px;
+        }
+        .favoritos-header p {
+            color: #e0e0e0;
+            font-size: 1.1rem;
+            margin-top: 15px;
+        }
+        .favoritos-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            width: 100%;
+        }
+        .favorito-card {
+            flex: 1 1 280px;
+            min-width: 250px;
+            background: linear-gradient(180deg, #144774 0%, #0d3557 100%);
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        .favorito-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(111, 173, 210, 0.3);
+            border: 1px solid #4e8bb8;
+        }
+        .favorito-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .favorito-card h4 {
+            color: #9ccae3;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+        .favorito-card p {
+            color: #e0e0e0;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        .favorito-card .card-link {
+            text-decoration: none;
+            color: inherit;
+            display: block;
+        }
+        .btn-remover-favorito {
+            position: absolute;
+            top: 25px;
+            right: 25px;
+            background: rgba(220, 53, 69, 0.8);
+            border: 2px solid #dc3545;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            z-index: 10;
+            color: #fff;
+            font-size: 1.1rem;
+        }
+        .btn-remover-favorito:hover {
+            background: rgba(220, 53, 69, 1);
+            transform: scale(1.1);
+        }
+        .mensagem-vazia {
+            text-align: center;
+            padding: 60px 20px;
+            color: #9ccae3;
+            font-size: 1.3rem;
+        }
+        .mensagem-vazia i {
+            font-size: 4rem;
+            margin-bottom: 20px;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img alt="logo" src="img/logo-diw3.png">
+            <h1>Infinity HUB</h1>
+        </div>
+        <nav>
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle" class="menu-icon">
+                <i class="fa fa-bars"></i>
+                <i class="fa fa-times-circle"></i>
+            </label>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jogos.html">Jogos</a></li>
+                <li><a href="grafico.html">Gráfico</a></li>
+                <li><a href="detalhes.html">Detalhes</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="favoritos-container">
+        <div class="favoritos-header">
+            <h2><i class="fa fa-heart"></i> Meus Favoritos</h2>
+            <p>Jogos que você marcou como favoritos</p>
+        </div>
+        <div id="favoritosGrid" class="favoritos-grid">
+            <!-- Os favoritos serão carregados aqui pelo JavaScript -->
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Infinity HUB. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="assets/scripts/auth.js"></script>
+    <script src="assets/scripts/favoritos.js"></script>
+</body>
+</html>
+

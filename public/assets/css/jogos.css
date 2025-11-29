@@ -25,11 +25,15 @@ header {
   background-color: #002242;
   color: #fff;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.4);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 header .logo {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
 header .logo img {
@@ -39,22 +43,50 @@ header .logo img {
 
 header .logo h1 {
   font-size: 1.6rem;
-  margin-left: 10px;
   color: #9ccae3;
 }
 
-header nav a {
+header nav {
+  display: flex;
+  align-items: center;
+}
+
+/* Menu hambúrguer - escondido por padrão */
+#menuToggle {
+  display: none;
+}
+
+.menu-icon {
+  display: none;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.menu li {
+  margin: 0;
+}
+
+.menu li a {
   color: #6fadd2;
   text-decoration: none;
-  margin-left: 24px;
   font-weight: 600;
   transition: color 0.3s;
+  padding: 8px 15px;
+  border-radius: 5px;
 }
 
-header nav a:hover,
-header nav a.active {
+.menu li a:hover,
+.menu li a.active {
   color: #9ccae3;
-  text-decoration: underline;
+  background-color: rgba(111, 173, 210, 0.1);
+  text-decoration: none;
 }
 
 /* ===== SEÇÃO DE FORMULÁRIO ===== */
@@ -196,6 +228,246 @@ header nav a.active {
 .btn-actions button:hover {
   background: linear-gradient(135deg, #4e8bb8, #9ccae3);
   transform: scale(1.05);
+}
+
+/* ============================================================
+   RESPONSIVIDADE - TABLETS
+   ============================================================ */
+@media screen and (max-width: 1024px) {
+  .form-section {
+    width: 85%;
+    max-width: 550px;
+  }
+
+  .jogos-container {
+    width: 85%;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+  }
+}
+
+/* ============================================================
+   RESPONSIVIDADE - TABLETS E MOBILE
+   ============================================================ */
+@media screen and (max-width: 768px) {
+  /* Header responsivo */
+  header {
+    padding: 15px 20px;
+    flex-wrap: wrap;
+    position: relative;
+  }
+
+  header .logo img {
+    width: 90px;
+  }
+
+  header .logo h1 {
+    font-size: 1.4rem;
+  }
+
+  /* Menu hambúrguer aparece em mobile */
+  .menu-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    z-index: 999;
+    transition: transform 0.3s ease;
+  }
+
+  .menu-icon:hover {
+    transform: scale(1.1);
+  }
+
+  .menu-icon i:last-child {
+    display: none;
+  }
+
+  /* Quando o menu está aberto */
+  #menuToggle:checked + .menu-icon i:first-child {
+    display: none;
+  }
+
+  #menuToggle:checked + .menu-icon i:last-child {
+    display: block;
+  }
+
+  /* Menu mobile - escondido por padrão */
+  .menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.95);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    z-index: 998;
+    padding: 80px 20px 20px;
+  }
+
+  #menuToggle:checked ~ .menu {
+    display: flex;
+  }
+
+  .menu li a {
+    font-size: 1.3rem;
+    padding: 15px 30px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+
+  .menu li a:hover {
+    background-color: rgba(111, 173, 210, 0.2);
+  }
+
+  /* Container principal */
+  main.container {
+    padding: 20px 15px;
+  }
+
+  main.container h2 {
+    font-size: 1.6rem;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  /* Formulário */
+  .form-section {
+    width: 100%;
+    max-width: 100%;
+    margin: 30px auto;
+    padding: 20px;
+  }
+
+  .form-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .form-group {
+    margin-bottom: 15px;
+  }
+
+  .form-section label {
+    font-size: 0.9rem;
+  }
+
+  .form-section input,
+  .form-section textarea {
+    font-size: 0.9rem;
+    padding: 9px;
+  }
+
+  .btn-submit {
+    padding: 11px;
+    font-size: 0.95rem;
+  }
+
+  /* Grid de jogos */
+  .jogos-container {
+    width: 100%;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-bottom: 40px;
+  }
+
+  .jogo-card {
+    padding: 15px;
+  }
+
+  .jogo-card h4 {
+    font-size: 1rem;
+  }
+
+  .jogo-card p {
+    font-size: 0.85rem;
+  }
+
+  .btn-actions {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .btn-actions button {
+    flex: 1;
+    min-width: 80px;
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+}
+
+/* ============================================================
+   RESPONSIVIDADE - TELAS MUITO PEQUENAS
+   ============================================================ */
+@media screen and (max-width: 480px) {
+  header {
+    padding: 12px 15px;
+  }
+
+  header .logo img {
+    width: 70px;
+  }
+
+  header .logo h1 {
+    font-size: 1.2rem;
+    margin-left: 5px;
+  }
+
+  header nav {
+    gap: 10px;
+  }
+
+  header nav a {
+    font-size: 0.85rem;
+    padding: 6px 10px;
+  }
+
+  main.container {
+    padding: 15px 10px;
+  }
+
+  main.container h2 {
+    font-size: 1.4rem;
+  }
+
+  .form-section {
+    padding: 15px;
+    margin: 20px auto;
+  }
+
+  .form-section h3 {
+    font-size: 1.1rem;
+  }
+
+  .form-section input,
+  .form-section textarea {
+    padding: 8px;
+    font-size: 0.85rem;
+  }
+
+  .jogo-card {
+    padding: 12px;
+  }
+
+  .jogo-card h4 {
+    font-size: 0.95rem;
+  }
+
+  .jogo-card p {
+    font-size: 0.8rem;
+  }
+
+  .btn-actions button {
+    font-size: 0.75rem;
+    padding: 5px 10px;
+  }
 }
 
 

@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gráfico</title>
 
-    <link rel="stylesheet" href="assets/css/grafico.css">    
+    <link rel="stylesheet" href="assets/css/grafico.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <!--Charset para gráficos-->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <!-- Mapbox -->
@@ -23,8 +24,17 @@
             <h1>Infinity HUB</h1>
         </div>
         <nav>
-            <a href="index.html">Home</a>
-            <a href="jogos.html" class="active">Jogos</a>
+            <input type="checkbox" id="menuToggle">
+            <label for="menuToggle" class="menu-icon">
+                <i class="fa fa-bars"></i>
+                <i class="fa fa-times-circle"></i>
+            </label>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jogos.html">Jogos</a></li>
+                <li><a href="grafico.html" class="active">Gráfico</a></li>
+                <li><a href="detalhes.html">Detalhes</a></li>
+            </ul>
         </nav>
     </header>
 
@@ -38,6 +48,7 @@
         <div id="map" style="width: 100%; height: 400px; margin-top:40px; border-radius:  12px;"></div>
     </div>
 
+    <script src="assets/scripts/auth.js"></script>
     <script src="assets/scripts/grafico.js"></script>
 </body>
 </html>
